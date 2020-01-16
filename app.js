@@ -7,6 +7,7 @@ const scoreText = document.getElementById('score');
 const resetButton = document.getElementById('reset-button');
 const resultField = document.getElementById('result-field');
 const compChoice = document.getElementById('comp-choice');
+const compImage = document.getElementById('comp-img');
 
 //state
 let wins = 0;
@@ -31,7 +32,21 @@ function useResults(result) {
     scoreText.textContent = `You've won ${wins} out of ${totalPlays()} games or ${percent}%`;
 }
 
+function displayComputerChoice(choice) {
+    
+    compChoice.textContent = `VS ${choice}`;
+    let img;
+    if (choice === 'Rock') {
+        compImage.src = './rock.png';
+    } else if (choice === 'Paper') {
+        compImage.src = './paper.png';
+    } else {
+        compImage.src = './scissors.png';
+    }   
+}
+
 function getResults() {
+    
     //set new state of choice
     const userChoice = document.querySelector('input:checked');
     
@@ -44,7 +59,7 @@ function getResults() {
     console.log(computerThrow);
     
     //show comp choice (can only do locally)
-    compChoice.textContent = `VS ${computerThrow}`;
+    displayComputerChoice(computerThrow);
     
     //declare checkResults
     const newResults = checkResults(computerThrow, playerThrow);
@@ -66,5 +81,6 @@ function resetGame() {
 
     //update dom
     resultField.style.opacity = '0';
+   
 }
 resetButton.addEventListener('click', resetGame);
