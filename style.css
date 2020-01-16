@@ -42,6 +42,9 @@ input:checked + .player-choice-img {
     box-shadow: 5px 5px 5px black;
 }
 
+.italics {
+    margin-bottom: 10px;
+}
 .button {
     margin: 10px;
     width: 150px;

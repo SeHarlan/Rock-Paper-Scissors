@@ -8,6 +8,7 @@ const resetButton = document.getElementById('reset-button');
 const resultField = document.getElementById('result-field');
 const compChoice = document.getElementById('comp-choice');
 const compImage = document.getElementById('comp-img');
+const drawText = document.getElementById('draws');
 
 //state
 let wins = 0;
@@ -30,6 +31,7 @@ function useResults(result) {
     resultField.style.opacity = '1';
     winLoseText.textContent = `We have a ${result}!`;
     scoreText.textContent = `You've won ${wins} out of ${totalPlays()} games or ${percent}%`;
+    drawText.textContent = `~ ${draws} draws ~`;
 }
 
 function displayComputerChoice(choice) {
