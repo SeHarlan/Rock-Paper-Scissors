@@ -25,7 +25,13 @@ function getResults() {
     console.log(playerThrow);
 
     //import computer choice
+    const computerThrow = getRandomThrow();
+    console.log(computerThrow);
+
     //declare checkResults
+    const newResults = checkResults(computerThrow, playerThrow);
+    console.log(newResults);;
+
     //display results in dom
     //update state elements
     //update dom with results
