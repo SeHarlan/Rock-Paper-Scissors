@@ -4,17 +4,62 @@
 
 
 body {
+    /* background-image: url('./tennis-court-1846813_1920.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     */
+    background-color: coral;
     text-align: center;
+    color: wheat;
+    text-shadow: 2px 2px 2px black;
 }
 
 input {
     display: none;
 }
 
-input:checked + span {
-    color: blue;
-    background-color: blue;
+
+ul {
+    list-style: none;
+    text-align: left;
+    width: 200px;
+    margin: auto;
 }
+
+img {
+    width: 100px;
+    border: 3px double rgb(0, 109, 128);
+    border-radius: 15px;
+    transition: 0.4s ease;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    margin: 10px; 
+}
+
+input:checked + .player-choice-img {
+    width: 110px;
+    border: 8px solid rgb(86, 0, 112);
+    box-shadow: 5px 5px 5px black;
+}
+
+.button {
+    margin: 10px;
+    width: 120px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 3px solid pink;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    transition: 0.4s ease;
+    background-color: rgba(255, 218, 185, 0.719);
+}
+
+.button:hover {
+    box-shadow: 4px 4px 4px black;
+    border: 5px solid pink;
+    width: 130px;
+}
+
 
 #result-field {
     opacity: 0;

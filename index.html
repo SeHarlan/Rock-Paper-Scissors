@@ -11,34 +11,32 @@
 
 <body>
 
+    <!-- <img src="./tennis-court-1846813_1920.jpg" class="background"> -->
+
     <header>
         <h1>Rock Paper Scissors</h1>
         <em>What will you choose?</em>
     </header>
 
     <content>
-        <h2>If you didn't know...</h2>
-        <ul> 
-            <li>paper beats rock</li>
-            <li>rock beats scissors</li>
-            <li>scissors beats paper</li>
-        </ul>
-
+        
         <div class="player-choice-div">
-            <label> Rock
+            <label>
                 <input type="radio" name="player-choice" id="player-rock" value="Rock" checked>
-                <span>!!</span>
+                <img src="./rock.png" alt="rock" class="player-choice-img">
             </label>
-            <label> Paper
+
+            <label>
                 <input type="radio" name="player-choice" id="player-paper" value="Paper">
-                <span>!!</span>
+                <img src="./paper.png" alt="paper" class="player-choice-img"> 
             </label>
-            <label> Scissors
+
+            <label>
                 <input type="radio" name="player-choice" id="player-scissors" value="Scissors">
-                <span>!!</span>
+                <img src="./scissors.png" alt="scissors" class="player-choice-img">
             </label>
             <br>
-            <button type="button" id="lets-play-button">Let's Play!</button>
+            <button type="button" id="lets-play-button" class="button">Let's Play!</button>
 
         </div> <!--player-choice-div-->
         <hr>
@@ -46,11 +44,20 @@
             <em id="comp-choice"></em>
             <h2 id="win-lose">You have won/lost</h2>
             <h3 id="score">your score is..</h3>
-            <button type="button" id="reset-button">Start Over</button>
+            <button type="button" class="button" id="reset-button">Start Over</button>
         </div>
 
-
     </content>
+
+    <footer>
+        <hr>
+        <h2>If you didn't know...</h2>
+        <ul> 
+            <li>paper beats rock</li>
+            <li>rock beats scissors</li>
+            <li>scissors beats paper</li>
+        </ul>
+    </footer>
 
     <script type="module" src="app.js"></script>
 </body>
