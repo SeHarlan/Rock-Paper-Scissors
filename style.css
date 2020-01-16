@@ -8,6 +8,7 @@ body {
     background-color: coral;
     text-align: center;
     color: wheat;
+    font-family: 'Raleway', sans-serif;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -54,20 +55,18 @@ input:checked + .player-choice-img {
 }
 
 .button:hover {
-    box-shadow: 4px 4px 4px black;
+    box-shadow: 6px 6px 6px black;
     border: 5px solid pink;
-    width: 170px;
+    width: 160px;
 }
 
-.player-choice-div {
-    
-}
 
 #comp-img {
     width: 120px;
     border: 8px solid rgb(202, 58, 82);
     box-shadow: 5px 5px 5px black;
     transition: 2s ease;
+    cursor: auto;
 }
 
 #result-field {
