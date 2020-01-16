@@ -27,20 +27,23 @@
         <div class="player-choice-div">
             <label> Rock
                 <input type="radio" name="player-choice" id="player-rock" value="Rock" checked>
+                <span>!!</span>
             </label>
             <label> Paper
                 <input type="radio" name="player-choice" id="player-paper" value="Paper">
+                <span>!!</span>
             </label>
             <label> Scissors
                 <input type="radio" name="player-choice" id="player-scissors" value="Scissors">
+                <span>!!</span>
             </label>
             <br>
             <button type="button" id="lets-play-button">Let's Play!</button>
 
         </div> <!--player-choice-div-->
-        <div>
-            <p id="won-lost">You have won/lost</p>
-            <p id="score">your score is..</p>
+        <div id="result-field">
+            <h2 id="win-lose">You have won/lost</h2>
+            <h3 id="score">your score is..</h3>
             <button type="button" id="reset-button">Start Over</button>
         </div>
 

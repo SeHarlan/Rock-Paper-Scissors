@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + span {
+    color: blue;
+    background-color: blue;
+}
+
+#result-field {
+    opacity: 0;
+}
+
