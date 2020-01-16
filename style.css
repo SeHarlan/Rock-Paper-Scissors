@@ -17,7 +17,9 @@ input {
 
 
 ul {
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    list-style: none;
+    padding: 0px;
     
 }
 
@@ -55,6 +57,10 @@ input:checked + .player-choice-img {
     box-shadow: 4px 4px 4px black;
     border: 5px solid pink;
     width: 170px;
+}
+
+.player-choice-div {
+    
 }
 
 #comp-img {
