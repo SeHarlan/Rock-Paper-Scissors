@@ -6,6 +6,7 @@ const winLoseText = document.getElementById('win-lose');
 const scoreText = document.getElementById('score');
 const resetButton = document.getElementById('reset-button');
 const resultField = document.getElementById('result-field');
+const compChoice = document.getElementById('comp-choice');
 
 //state
 let wins = 0;
@@ -33,15 +34,18 @@ function useResults(result) {
 function getResults() {
     //set new state of choice
     const userChoice = document.querySelector('input:checked');
-
+    
     //determine player choice
     const playerThrow = userChoice.value;
     console.log(playerThrow);
-
+    
     //import computer choice
     const computerThrow = getRandomThrow();
     console.log(computerThrow);
-
+    
+    //show comp choice (can only do locally)
+    compChoice.textContent = `VS ${computerThrow}`;
+    
     //declare checkResults
     const newResults = checkResults(computerThrow, playerThrow);
     console.log(newResults);
