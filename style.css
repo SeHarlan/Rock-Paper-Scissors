@@ -86,7 +86,7 @@ input:checked + .player-choice-img {
 
 
 #comp-img {
-    width: 120px;
+    width: 110px;
     border: 8px solid rgb(202, 58, 82);
     box-shadow: 5px 5px 5px black;
     transition: 2s ease;
