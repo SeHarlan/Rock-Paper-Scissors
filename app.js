@@ -9,6 +9,8 @@ const resultField = document.getElementById('result-field');
 const compChoice = document.getElementById('comp-choice');
 const compImage = document.getElementById('comp-img');
 const drawText = document.getElementById('draws');
+const getResultsButton = playButton.addEventListener('click', getResults);
+const resetButtonClick = resetButton.addEventListener('click', resetGame);
 
 //state
 let wins = 0;
@@ -32,18 +34,19 @@ function useResults(result) {
     winLoseText.textContent = `We have a ${result}!`;
     scoreText.textContent = `You've won ${wins} out of ${totalPlays()} games or ${percent}%`;
     drawText.textContent = `~ ${draws} draws ~`;
+    // compImage.style.animation = 'shake 0.5s';
 }
 
 function displayComputerChoice(choice) {
     
     compChoice.textContent = `VS ${choice}`;
-    let img;
+    // let img;
     if (choice === 'Rock') {
-        compImage.src = './rock.png';
+        compImage.src = './images/rock.png';
     } else if (choice === 'Paper') {
-        compImage.src = './paper.png';
+        compImage.src = './images/paper.png';
     } else {
-        compImage.src = './scissors.png';
+        compImage.src = './images/scissors.png';
     }   
 }
 
@@ -72,8 +75,10 @@ function getResults() {
     //update state elements
     //update dom with results
 
+    compImage.classList.remove('comp-img');
+    void compImage.offsetWidth;
+    compImage.classList.add('comp-img');
 }
-playButton.addEventListener('click', getResults);
 
 function resetGame() {
     //reset state elements
@@ -83,6 +88,7 @@ function resetGame() {
 
     //update dom
     resultField.style.opacity = '0';
-   
 }
-resetButton.addEventListener('click', resetGame);
+
+getResultsButton();
+resetButtonClick();
