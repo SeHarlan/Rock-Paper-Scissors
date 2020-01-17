@@ -33,20 +33,43 @@ img {
     box-shadow: 2px 2px 2px black;
     cursor: pointer;
     margin: 10px; 
+    /* height: auto; */
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 110px;
+
 }
 
 
 input:checked + .player-choice-img {
-    width: 120px;
     border: 8px solid rgb(86, 0, 112);
     box-shadow: 5px 5px 5px black;
 }
+
+/* #player-choice-div {
+    
+} */
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 .italics {
     margin-bottom: 10px;
 }
 .button {
     margin: 10px;
+    height: 30px;
     width: 150px;
     padding: 3px;
     border-radius: 10px;
@@ -61,7 +84,13 @@ input:checked + .player-choice-img {
     box-shadow: 6px 6px 6px black;
     border: 5px solid pink;
     width: 160px;
+    animation: shake 0.2s;
 }
+
+.comp-img {
+    animation: shake 0.5s;
+}
+
 
 
 #comp-img {
