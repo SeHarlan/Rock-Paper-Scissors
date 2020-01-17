@@ -12,29 +12,26 @@
 
 <body>
 
-    <!-- <img src="./tennis-court-1846813_1920.jpg" class="background"> -->
-
     <header>
         <h1>Rock Paper Scissors</h1>
         <i>What will you choose?</i>
     </header>
 
     <content>
-        
         <div class="player-choice-div">
             <label>
                 <input type="radio" name="player-choice" id="player-rock" value="Rock" checked>
-                <img src="./rock.png" alt="rock" class="player-choice-img">
+                <img src="./images/rock.png" alt="rock" class="player-choice-img">
             </label>
 
             <label>
                 <input type="radio" name="player-choice" id="player-paper" value="Paper">
-                <img src="./paper.png" alt="paper" class="player-choice-img"> 
+                <img src="./images/paper.png" alt="paper" class="player-choice-img"> 
             </label>
 
             <label>
                 <input type="radio" name="player-choice" id="player-scissors" value="Scissors">
-                <img src="./scissors.png" alt="scissors" class="player-choice-img">
+                <img src="./images/scissors.png" alt="scissors" class="player-choice-img">
             </label>
             <br>
             <button type="button" id="lets-play-button" class="button">Let's Play!</button>
@@ -44,14 +41,13 @@
         <div id="result-field">
             <em id="comp-choice"></em>
             <br>
-            <img src='' id="comp-img">
+            <img src='' class="comp-img" id="comp-img">
             <h2 id="win-lose">You have won/lost</h2>
             <h3 id="score">your score is..</h3>
             <i class="draw-field" id="draws"></i>
             <br>
             <button type="button" class="button" id="reset-button">Start Over</button>
-        </div>
-
+        </div> <!--result-field-->
     </content>
 
     <footer>
